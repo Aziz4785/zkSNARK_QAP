@@ -36,3 +36,7 @@ If (a,b) needs to be kept secret, we should not send it directly in command line
 note :
 the code for flattening is taken from : 
 https://github.com/ethereum/research/blob/master/zksnark/code_to_r1cs.py
+
+
+Aziz Kanoun
+
