@@ -18,18 +18,18 @@ the program has 3 CLI commands:
 
 ## How to start
 
-Start the program with 
--python main.py export__  
-(this will create a r1cs.txt file containing the R1CS)__
--then you can try the other command with: python main.py <file_name> prove <a> <b>__
-(file name should refer to a file containing the r1cs)__
--finally try the verify command with:  python main.py <file_name> prove <a> <b> verify__
+Start the program with: \
+-python main.py export\
+(this will create a r1cs.txt file containing the R1CS)\
+-then you can try the other command with: python main.py <file_name> prove <a> <b>\
+(file name should refer to a file containing the r1cs)\
+-finally try the verify command with:  python main.py <file_name> prove <a> <b> verify
 
 
 ## Security problems
 
-Note that this approach isn't secure because the function "Verify" is relatively simple so it could be cracked easily__
-Also If the verifier want has access to the vector s such that s.A(x) * s.B(x) - s.c(x) % Z(x) = 0 he can guess the secret value of the input (a,b).__
+Note that this approach isn't secure because the function "Verify" is relatively simple so it could be cracked easily\
+Also If the verifier want has access to the vector s such that s.A(x) * s.B(x) - s.c(x) % Z(x) = 0 he can guess the secret value of the input (a,b)\
 If (a,b) needs to be kept secret, we should not send it directly in command line like that ! we need to encode it first__
 
 
