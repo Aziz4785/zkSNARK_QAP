@@ -12,7 +12,7 @@ func Verify (a int, b int) {
 
 the program has 3 CLI commands:
     - `export` Export R1CS
-    - `prove` Generate proof with exported R1CS from `export` that accepts `a, b`
+    - `prove` Generate proof with exported R1CS from `export` that accepts a, b`
     - `verify` Verify proof
 
 
@@ -21,9 +21,9 @@ the program has 3 CLI commands:
 Start the program with: \
 -python main.py export\
 (this will create a r1cs.txt file containing the R1CS)\
--then you can try the other command with: python main.py <file_name> prove <a> <b>\
+-then you can try the other command with: python main.py <file_name> prove < a > < b >\
 (file name should refer to a file containing the r1cs)\
--finally try the verify command with:  python main.py <file_name> prove <a> <b> verify
+-finally try the verify command with:  python main.py < file_name > prove < a > < b > verify
 
 
 ## Security problems
